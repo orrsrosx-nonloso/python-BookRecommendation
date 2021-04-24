@@ -1,0 +1,431 @@
+2020-04-07 10:59:47,510 - ERROR - app:adminuser - lineno:539 - Admin User info error: 'userid'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 533, in adminuser
+    userid = session['userid']
+  File "E:\pythonvirtext\py1111\lib\site-packages\werkzeug\local.py", line 377, in <lambda>
+    __getitem__ = lambda x, i: x._get_current_object()[i]
+  File "E:\pythonvirtext\py1111\lib\site-packages\flask\sessions.py", line 84, in __getitem__
+    return super(SecureCookieSession, self).__getitem__(key)
+KeyError: 'userid'
+2020-04-07 11:01:32,807 - ERROR - app:root - lineno:34 - select hot books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 30, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1082, in read
+    self._read_result_packet(first_packet)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1151, in _read_result_packet
+    self._get_descriptions()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1222, in _get_descriptions
+    field = self.connection._read_packet(FieldDescriptorPacket)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 674, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2020-04-08 18:41:43,619 - ERROR - app:adminuser - lineno:539 - Admin User info error: 'userid'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 533, in adminuser
+    userid = session['userid']
+  File "E:\pythonvirtext\py1111\lib\site-packages\werkzeug\local.py", line 377, in <lambda>
+    __getitem__ = lambda x, i: x._get_current_object()[i]
+  File "E:\pythonvirtext\py1111\lib\site-packages\flask\sessions.py", line 84, in __getitem__
+    return super(SecureCookieSession, self).__getitem__(key)
+KeyError: 'userid'
+2020-04-08 18:42:02,764 - ERROR - app:adminuser - lineno:539 - Admin User info error: 'userid'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 533, in adminuser
+    userid = session['userid']
+  File "E:\pythonvirtext\py1111\lib\site-packages\werkzeug\local.py", line 377, in <lambda>
+    __getitem__ = lambda x, i: x._get_current_object()[i]
+  File "E:\pythonvirtext\py1111\lib\site-packages\flask\sessions.py", line 84, in __getitem__
+    return super(SecureCookieSession, self).__getitem__(key)
+KeyError: 'userid'
+2020-04-08 18:44:54,944 - ERROR - app:adminuser - lineno:539 - Admin User info error: 'userid'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 533, in adminuser
+    userid = session['userid']
+  File "E:\pythonvirtext\py1111\lib\site-packages\werkzeug\local.py", line 377, in <lambda>
+    __getitem__ = lambda x, i: x._get_current_object()[i]
+  File "E:\pythonvirtext\py1111\lib\site-packages\flask\sessions.py", line 84, in __getitem__
+    return super(SecureCookieSession, self).__getitem__(key)
+KeyError: 'userid'
+2020-04-09 12:00:24,461 - ERROR - app:bookinfo - lineno:279 - select book info error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 272, in bookinfo
+    score = mysql.fetchone_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 33, in fetchone_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 674, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2020-04-09 12:00:24,465 - ERROR - app:bookinfo - lineno:279 - select book info error: 'NoneType' object has no attribute 'settimeout'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 547, in ping
+    self._read_ok_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 394, in _read_ok_packet
+    pkt = self._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 668, in _read_packet
+    "Lost connection to MySQL server during query")
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 266, in bookinfo
+    book_info = mysql.fetchall_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 43, in fetchall_db
+    self.connection.ping(reconnect=True)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 550, in ping
+    self.connect()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 599, in connect
+    self._request_authentication()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 861, in _request_authentication
+    auth_packet = self._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 657, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 688, in _read_bytes
+    self._sock.settimeout(self._read_timeout)
+AttributeError: 'NoneType' object has no attribute 'settimeout'
+2020-04-09 12:00:24,465 - ERROR - app:bookinfo - lineno:279 - select book info error: (2013, 'Lost connection to MySQL server during query')
+Traceback (most recent call last):
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 547, in ping
+    self._read_ok_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 394, in _read_ok_packet
+    pkt = self._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 671, in _read_packet
+    % (packet_number, self._next_seq_id))
+pymysql.err.InternalError: Packet sequence number wrong - got 101 expected 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 266, in bookinfo
+    book_info = mysql.fetchall_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 43, in fetchall_db
+    self.connection.ping(reconnect=True)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 550, in ping
+    self.connect()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 598, in connect
+    self._get_server_information()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 668, in _read_packet
+    "Lost connection to MySQL server during query")
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+2020-05-06 09:45:30,880 - ERROR - app:root - lineno:34 - select hot books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 30, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1082, in read
+    self._read_result_packet(first_packet)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1151, in _read_result_packet
+    self._get_descriptions()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1222, in _get_descriptions
+    field = self.connection._read_packet(FieldDescriptorPacket)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 674, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2020-05-06 10:18:21,563 - ERROR - app:rating - lineno:361 - rating books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 351, in rating
+    count = mysql.fetchone_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 33, in fetchone_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 674, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2020-05-06 10:18:22,113 - ERROR - app:rating - lineno:361 - rating books error: Protocol error, expecting EOF
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 351, in rating
+    count = mysql.fetchone_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 33, in fetchone_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1082, in read
+    self._read_result_packet(first_packet)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1151, in _read_result_packet
+    self._get_descriptions()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1252, in _get_descriptions
+    assert eof_packet.is_eof_packet(), 'Protocol error, expecting EOF'
+AssertionError: Protocol error, expecting EOF
+2020-05-13 11:34:58,072 - ERROR - app:is_valid - lineno:186 - username:1073280291,password:1073280291: has login error
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 177, in is_valid
+    result = mysql.fetchone_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 33, in fetchone_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 674, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2020-05-13 11:35:25,555 - ERROR - app:root - lineno:34 - select hot books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 30, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 674, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2020-05-13 11:36:49,919 - ERROR - app:root - lineno:34 - select hot books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 30, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 674, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2020-05-13 11:54:25,575 - ERROR - app:bookinfo - lineno:279 - select book info error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 266, in bookinfo
+    book_info = mysql.fetchall_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 674, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2020-05-13 11:54:25,577 - ERROR - app:bookinfo - lineno:279 - select book info error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 547, in ping
+    self._read_ok_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 394, in _read_ok_packet
+    pkt = self._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 668, in _read_packet
+    "Lost connection to MySQL server during query")
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 268, in bookinfo
+    update_recommend_book(userid, bookid)
+  File "E:\pythonvirtext\web\app.py", line 235, in update_recommend_book
+    mysql.exe(sql)
+  File "E:\pythonvirtext\web\utils.py", line 53, in exe
+    self.connection.ping(reconnect=True)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 550, in ping
+    self.connect()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 598, in connect
+    self._get_server_information()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 674, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2020-05-13 11:54:25,578 - ERROR - app:bookinfo - lineno:279 - select book info error: (2013, 'Lost connection to MySQL server during query')
+Traceback (most recent call last):
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 547, in ping
+    self._read_ok_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 394, in _read_ok_packet
+    pkt = self._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 671, in _read_packet
+    % (packet_number, self._next_seq_id))
+pymysql.err.InternalError: Packet sequence number wrong - got 101 expected 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 266, in bookinfo
+    book_info = mysql.fetchall_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 43, in fetchall_db
+    self.connection.ping(reconnect=True)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 550, in ping
+    self.connect()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 598, in connect
+    self._get_server_information()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 668, in _read_packet
+    "Lost connection to MySQL server during query")
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+2020-05-13 11:59:38,938 - ERROR - app:adminuser - lineno:539 - Admin User info error: 'userid'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 533, in adminuser
+    userid = session['userid']
+  File "E:\pythonvirtext\py1111\lib\site-packages\werkzeug\local.py", line 377, in <lambda>
+    __getitem__ = lambda x, i: x._get_current_object()[i]
+  File "E:\pythonvirtext\py1111\lib\site-packages\flask\sessions.py", line 84, in __getitem__
+    return super(SecureCookieSession, self).__getitem__(key)
+KeyError: 'userid'
+2020-05-14 09:59:21,544 - ERROR - app:root - lineno:34 - select hot books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 30, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 674, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2020-05-14 09:59:53,845 - ERROR - app:root - lineno:34 - select hot books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 30, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1082, in read
+    self._read_result_packet(first_packet)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1151, in _read_result_packet
+    self._get_descriptions()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1222, in _get_descriptions
+    field = self.connection._read_packet(FieldDescriptorPacket)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 674, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2020-05-26 13:38:08,946 - ERROR - app:root - lineno:34 - select hot books error: unpack_from requires a buffer of at least 8 bytes
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 30, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1082, in read
+    self._read_result_packet(first_packet)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1151, in _read_result_packet
+    self._get_descriptions()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1222, in _get_descriptions
+    field = self.connection._read_packet(FieldDescriptorPacket)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet = packet_type(buff, self.encoding)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\protocol.py", line 235, in __init__
+    self._parse_field_descriptor(encoding)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\protocol.py", line 242, in _parse_field_descriptor
+    self.catalog = self.read_length_coded_string()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\protocol.py", line 175, in read_length_coded_string
+    length = self.read_length_encoded_integer()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\protocol.py", line 166, in read_length_encoded_integer
+    return self.read_uint64()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\protocol.py", line 138, in read_uint64
+    result = struct.unpack_from('<Q', self._data, self._position)[0]
+struct.error: unpack_from requires a buffer of at least 8 bytes

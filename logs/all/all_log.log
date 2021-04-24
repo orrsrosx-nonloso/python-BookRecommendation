@@ -1,0 +1,41 @@
+2020-04-07 10:59:47,510 - ERROR - app:adminuser - lineno:539 - Admin User info error: 'userid'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 533, in adminuser
+    userid = session['userid']
+  File "E:\pythonvirtext\py1111\lib\site-packages\werkzeug\local.py", line 377, in <lambda>
+    __getitem__ = lambda x, i: x._get_current_object()[i]
+  File "E:\pythonvirtext\py1111\lib\site-packages\flask\sessions.py", line 84, in __getitem__
+    return super(SecureCookieSession, self).__getitem__(key)
+KeyError: 'userid'
+2020-04-07 11:00:03,194 - INFO - app:is_valid - lineno:183 - username:1073280291,password:1073280261: has login filed
+2020-04-07 11:01:04,447 - INFO - app:is_valid - lineno:180 - username:2,password:stockton, california, usa: has login success
+2020-04-07 11:01:28,734 - INFO - app:update_recommend_book - lineno:240 - update_recommend_book, sql: insert into Booktuijian (UserID,BookID,score) values ('2','0452282152','0') 
+2020-04-07 11:01:32,299 - INFO - app:rating - lineno:359 - update book rating success,sql:INSERT INTO Bookrating (UserID,BookID,Rating) values ('2','0452282152','10') 
+2020-04-07 11:01:32,807 - ERROR - app:root - lineno:34 - select hot books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "E:\pythonvirtext\web\app.py", line 30, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "E:\pythonvirtext\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1082, in read
+    self._read_result_packet(first_packet)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1151, in _read_result_packet
+    self._get_descriptions()
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 1222, in _get_descriptions
+    field = self.connection._read_packet(FieldDescriptorPacket)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 674, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\pythonvirtext\py1111\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2020-04-07 11:01:32,818 - INFO - app:add - lineno:448 - update Cart  success,sql:INSERT INTO Cart (UserID,BookID ) values ('2','0452282152') 
+2020-04-07 11:26:42,530 - INFO - app:addbook - lineno:645 - add Books  success,sql:INSERT INTO Books (BookID,BookTitle,BookAuthor,PubilcationYear,Publisher,ImageS,ImageM,ImageL) 
+                     values  ('342','2342','242','2018','2342','http://photocdn.sohu.com/20140424/Img398717878.jpg','http://photocdn.sohu.com/20140424/Img398717878.jpg','http://photocdn.sohu.com/20140424/Img398717878.jpg')
